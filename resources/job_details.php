@@ -116,7 +116,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src=<?=$job['src']?> alt="">
+                                    <img src="../<?= $job['img']?>" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="#"><h4><?=$job['name']?></h4></a>
