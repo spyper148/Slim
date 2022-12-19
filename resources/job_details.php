@@ -52,7 +52,7 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.php">home</a></li>
+                                            <li><a href="/">home</a></li>
                                             <li><a href="jobs.php">Browse Job</a></li>
                                             <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
@@ -146,43 +146,35 @@
                     </div>
                     <div class="apply_job_form white-bg">
                         <h4>Apply for the job</h4>
-                        <form action="#">
+                        <form action="/form" method="post">
+                            <input hidden name="id" value="<?=$job['id']?>">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Your name">
+                                        <input type="text" name="name" placeholder="Your name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Email">
+                                        <input type="email" name="email"  placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Website/Portfolio link">
+                                        <input type="text" name="port_link" placeholder="Website/Portfolio link">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                          <button type="button" id="inputGroupFileAddon03"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
-                                          </button>
-                                        </div>
-                                        <div class="custom-file">
-                                          <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
-                                          <label class="custom-file-label" for="inputGroupFile03">Upload CV</label>
-                                        </div>
-                                      </div>
+
                                 </div>
                                 <div class="col-md-12">
                                     <div class="input_field">
-                                        <textarea name="#" id="" cols="30" rows="10" placeholder="Coverletter"></textarea>
+                                        <textarea name="text" id="" cols="30" rows="10" placeholder="Coverletter"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="submit_btn">
-                                        <button class="boxed-btn3 w-100" type="submit">Apply Now</button>
+                                        <input class="boxed-btn3 w-100" type="submit" value="Apply Now">
                                     </div>
                                 </div>
                             </div>

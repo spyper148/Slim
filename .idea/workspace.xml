@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2994458-8185-44ff-b131-9e0efdbdbf73" name="Changes" comment="end">
-      <change afterPath="$PROJECT_DIR$/resources/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/localhost.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/localhost.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/jobs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/job_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/job_details.php" afterDir="false" />
     </list>
@@ -64,6 +66,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\localhost" />
+      <recent name="D:\OpenServer\domains\localhost\resources" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671180416945</updated>
       <workItem from="1671180419400" duration="3711000" />
-      <workItem from="1671239183156" duration="5614000" />
+      <workItem from="1671239183156" duration="5788000" />
+      <workItem from="1671421344428" duration="13156000" />
     </task>
     <task id="LOCAL-00001" summary="Srart">
       <created>1671180771124</created>
@@ -89,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671184094215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="end">
+      <created>1671250647123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671250647123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

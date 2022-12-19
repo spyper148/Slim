@@ -13,5 +13,6 @@ ORM::configure('password', '');
 
 $app->get('/', [PageController::class, 'index']);
 $app->get('/job/{id}', [PageController::class, 'job_details']);
-
+$app->get('/jobs', [PageController::class, 'jobs']);
+$app->post('/form', [PageController::class, 'form']);
 $app->run();
