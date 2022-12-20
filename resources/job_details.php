@@ -43,7 +43,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php">
+                                    <a href="/">
                                         <img src="/img/logo.png" alt="">
                                     </a>
                                 </div>
@@ -53,7 +53,7 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="/">home</a></li>
-                                            <li><a href="jobs.php">Browse Job</a></li>
+                                            <li><a href="/jobs">Browse Job</a></li>
                                             <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="candidate.html">Candidates </a></li>
@@ -100,6 +100,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
+                        <!--Вывод названия  вакансии -->
                         <h3><?=$job['name']?></h3>
                     </div>
                 </div>
@@ -116,15 +117,19 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
+                                    <!--Вывод логотипа компании -->
                                     <img src="../<?= $job['img']?>" alt="">
                                 </div>
                                 <div class="jobs_conetent">
+                                    <!--Вывод названия  вакансии -->
                                     <a href="#"><h4><?=$job['name']?></h4></a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
+                                            <!--Вывод названия  локации -->
                                             <p> <i class="fa fa-map-marker"></i> <?=$job['l_name']?></p>
                                         </div>
                                         <div class="location">
+                                            <!--Вывод названия  типа -->
                                             <p> <i class="fa fa-clock-o"></i> <?=$job['types_name']?></p>
                                         </div>
                                     </div>
@@ -140,6 +145,7 @@
                     <div class="descript_wrap white-bg">
                         <div class="single_wrap">
                             <h4>Job description</h4>
+                            <!--Вывод описания вакансии -->
                             <p><?=$job['description']?></p>
                         </div>
 
@@ -147,6 +153,7 @@
                     <div class="apply_job_form white-bg">
                         <h4>Apply for the job</h4>
                         <form action="/form" method="post">
+                            <!--Скрытое поле с id вакансии -->
                             <input hidden name="id" value="<?=$job['id']?>">
                             <div class="row">
                                 <div class="col-md-6">
@@ -187,6 +194,7 @@
                             <h3>Job Summery</h3>
                         </div>
                         <div class="job_content">
+                            <!-- Информация о вакансии -->
                             <ul>
                                 <li>Published on: <span><?=$job['date']?></span></li>
                                 <li>Vacancy: <span>2 Position</span></li>
@@ -238,6 +246,7 @@
             </div>
         </div>
     </div>
+    <?php require 'footer.php'?>
 
 
     <!-- link that opens popup -->

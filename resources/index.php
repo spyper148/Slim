@@ -42,7 +42,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
-                                <a href="index.php">
+                                <a href="/">
                                     <img src="/img/logo.png" alt="">
                                 </a>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.php">home</a></li>
+                                        <li><a href="/">home</a></li>
                                         <li><a href="/jobs">Browse Job</a></li>
                                         <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
@@ -100,6 +100,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-6">
                     <div class="slider_text">
+                        <!--Вывод числа вакансий -->
                         <h5 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s"><?=$count?>+ Jobs listed</h5>
                         <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Find your Dream Job</h3>
                         <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">We provide online instant cash loans with quick approval that suit your term length</p>
@@ -118,58 +119,7 @@
 <!-- slider_area_end -->
 
 <!-- catagory_area -->
-<div class="catagory_area">
-    <div class="container">
-        <div class="row cat_search">
-            <div class="col-lg-3 col-md-4">
-                <div class="single_input">
-                    <input type="text" placeholder="Search keyword">
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="single_input">
-                    <select class="wide" >
-                        <option data-display="Location">Location</option>
-                        <option value="1">Dhaka</option>
-                        <option value="2">Rangpur</option>
-                        <option value="4">Sylet</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="single_input">
-                    <select class="wide">
-                        <option data-display="Category">Category</option>
-                        <option value="1">Category 1</option>
-                        <option value="2">Category 2</option>
-                        <option value="4">Category 3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12">
-                <div class="job_btn">
-                    <a href="#" class="boxed-btn3">Find Job</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="popular_search d-flex align-items-center">
-                    <span>Popular Search:</span>
-                    <ul>
-                        <li><a href="#">Design & Creative</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Administration</a></li>
-                        <li><a href="#">Teaching & Education</a></li>
-                        <li><a href="#">Engineering</a></li>
-                        <li><a href="#">Software & Web</a></li>
-                        <li><a href="#">Telemarketing</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--/ catagory_area -->
 
 <!-- popular_catagory_area_start  -->
@@ -183,6 +133,7 @@
             </div>
         </div>
         <div class="row">
+            <!--Вывод популярных категорий -->
             <?php foreach ($popular_categories as $popular_category): ?>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
@@ -205,14 +156,11 @@
                     <h3>Job Listing</h3>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="brouse_job text-right">
-                    <a href="jobs.php" class="boxed-btn4">Browse More Job</a>
-                </div>
-            </div>
+
         </div>
         <div class="job_lists">
             <div class="row">
+                <!--Вывод списка вакансий -->
                 <?php foreach ($jobs_list as $job):?>
                     <div class="col-lg-12 col-md-12">
                         <div class="single_jobs white-bg d-flex justify-content-between">
@@ -250,116 +198,7 @@
 </div>
 <!-- job_listing_area_end  -->
 
-<!-- featured_candidates_area_start  -->
-<div class="featured_candidates_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section_title text-center mb-40">
-                    <h3>Featured Candidates</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="candidate_active owl-carousel">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/1.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/2.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/3.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/4.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/5.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/6.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/7.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/8.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/9.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/9.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/10.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/3.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="/img/candiateds/4.png" alt="">
-                        </div>
-                        <a href="#"><h4>Markary Jondon</h4></a>
-                        <p>Software Engineer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- featured_candidates_area_end  -->
+
 
 <div class="top_companies_area">
     <div class="container">
@@ -369,13 +208,21 @@
                     <h3>Top Companies</h3>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="brouse_job text-right">
-                    <a href="jobs.php" class="boxed-btn4">Browse More Job</a>
-                </div>
-            </div>
+
         </div>
         <div class="row">
+            <!-- top companies  -->
+            <?php foreach ($top_firms as $top_firm): ?>
+                <div class="col-lg-4 col-xl-3 col-md-6">
+                    <div class="single_company">
+                        <div class="thumb">
+                            <img src=<?=$top_firm['src']?> alt="">
+                        </div>
+                        <a href="jobs.php"><h3><?=$top_firm['name'] ?></h3></a>
+                        <p> <span><?= $top_firm['COUNT(jobs.id_firm)']?></span> Available position</p>
+                    </div>
+                </div>
+            <?php endforeach;?>
 
         </div>
     </div>
@@ -404,78 +251,9 @@
 </div>
 <!-- job_searcing_wrap end  -->
 
-<!-- testimonial_area  -->
-<div class="testimonial_area  ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section_title text-center mb-40">
-                    <h3>Testimonial</h3>
-                </div>
-            </div>
-            <div class="col-xl-12">
-                <div class="testmonial_active owl-carousel">
-                    <div class="single_carousel">
-                        <div class="row">
-                            <div class="col-lg-11">
-                                <div class="single_testmonial d-flex align-items-center">
-                                    <div class="thumb">
-                                        <img src="/img/testmonial/author.png" alt="">
-                                        <div class="quote_icon">
-                                            <i class="Flaticon flaticon-quote"></i>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
-                                        <span>- Micky Mouse</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_carousel">
-                        <div class="row">
-                            <div class="col-lg-11">
-                                <div class="single_testmonial d-flex align-items-center">
-                                    <div class="thumb">
-                                        <img src="/img/testmonial/author.png" alt="">
-                                        <div class="quote_icon">
-                                            <i class=" Flaticon flaticon-quote"></i>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
-                                        <span>- Micky Mouse</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_carousel">
-                        <div class="row">
-                            <div class="col-lg-11">
-                                <div class="single_testmonial d-flex align-items-center">
-                                    <div class="thumb">
-                                        <img src="/img/testmonial/author.png" alt="">
-                                        <div class="quote_icon">
-                                            <i class="Flaticon flaticon-quote"></i>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
-                                        <span>- Micky Mouse</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?=$this->fetch('./footer.php')?>
-<!-- /testimonial_area  -->
+
+<?php require 'footer.php'?>
+
 <!-- link that opens popup -->
 <!-- JS here -->
 <script src="/js/vendor/modernizr-3.5.0.min.js"></script>

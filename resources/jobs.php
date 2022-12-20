@@ -44,7 +44,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php">
+                                    <a href="/">
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
@@ -54,7 +54,7 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="/">home</a></li>
-                                            <li><a href="jobs.php">Browse Job</a></li>
+                                            <li><a href="/jobs">Browse Job</a></li>
                                             <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="candidate.html">Candidates </a></li>
@@ -101,6 +101,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
+                        <!--Вывод числа вакансий -->
                         <h3><?=$count?>+ Jobs Available</h3>
                     </div>
                 </div>
@@ -128,6 +129,7 @@
                                         <div class="single_field">
                                             <select class="wide" name="loc">
                                                 <option value=">=1" >Location</option>
+                                                <!--Вывод списка локаций -->
                                                 <?php foreach ($locations as $location):?>
                                                 <option value="=<?=$location['id']?>" <?php if('='.$location['id'] == $loc):?> selected <?php endif; ?>><?=$location['name']?></option>
                                                 <?php endforeach; ?>
@@ -139,6 +141,7 @@
                                         <div class="single_field">
                                             <select class="wide" name="cat" >
                                                 <option data-display="Category" value=">=1" >Category</option>
+                                                <!--Вывод списка категорий -->
                                                 <?php foreach ($categories as $category):?>
                                                 <option value="=<?= $category['id']?>" <?php if('='.$category['id'] == $cat):?> selected <?php endif; ?>><?=$category['name']?></option>
                                                 <?php  endforeach;?>
@@ -149,6 +152,7 @@
                                         <div class="single_field">
                                             <select class="wide" name="exp">
                                                 <option data-display="Experience" value=">=1">Experience</option>
+                                                <!--Вывод списка существующего опыта -->
                                                 <?php foreach ($experiences as $experience):?>
                                                 <option value="=<?=$experience['id']?>" <?php if('='.$experience['id'] == $exp):?> selected <?php endif; ?>><?=$experience['name']?></option>
                                                 <?php endforeach;?>
@@ -159,6 +163,7 @@
                                         <div class="single_field">
                                             <select class="wide" name="job_t">
                                                 <option data-display="Job type" value=">=1">Job type</option>
+                                                <!--Вывод списка типов работы -->
                                                 <?php foreach ($job_types as $job_type): ?>
                                                 <option value="=<?=$job_type['id']?>" <?php if('='.$job_type['id'] == $job_t):?> selected <?php endif; ?>><?=$job_type['name']?></option>
                                                 <?php endforeach; ?>
@@ -169,6 +174,7 @@
                                         <div class="single_field">
                                             <select class="wide" name="qual">
                                                 <option data-display="Qualification" value=">=1">Qualification</option>
+                                                <!--Вывод списка квалификаций -->
                                                 <?php foreach ($qualifications as $qualification):?>
                                                 <option value='=<?=$qualification['id']?>' <?php if('='.$qualification['id'] == $qual):?> selected <?php endif; ?>><?= $qualification['name']?></option>
                                                 <?endforeach; ?>
@@ -179,6 +185,7 @@
                                         <div class="single_field">
                                             <select class="wide" name="gen">
                                                 <option data-display="Gender" value=">=1">Gender</option>
+                                                <!--Вывод списка гендеров -->
                                                 <?php  foreach ($genders as $gender):?>
                                                 <option value="=<?=$gender['id']?>" <?php if('='.$gender['id'] == $gen):?> selected <?php endif; ?>><?=$gender['name']?></option>
                                                 <? endforeach; ?>
@@ -189,15 +196,7 @@
 
 
                         </div>
-                        <div class="range_wrap">
-                            <label for="amount">Price range:</label>
-                            <div id="slider-range"></div>
-                            <p>
-                                <input type="text" id="amount" readonly style="border:0; color:#7A838B; font-size: 14px; font-weight:400;">
-                                <input type="hidden" name="salary_min" id="salary_min">
-                                <input type="hidden" name="salary_max" id="salary_max">
-                            </p>
-                        </div>
+
                         <div class="reset_btn">
                             <a class="boxed-btn3 w-100" href="/jobs?loc=>=1&exp=>=1&cat=>=1&job_t=>=1&qual=>=1&gen=>=1&name=">Reset</a>
                         </div>
@@ -217,12 +216,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="serch_cat d-flex justify-content-end">
-                                        <select>
-                                            <option data-display="Most Recent">Most Recent</option>
-                                            <option value="1">Marketer</option>
-                                            <option value="2">Wordpress </option>
-                                            <option value="4">Designer</option>
-                                        </select>
+
                                     </div>
                                 </div>
                             </div>
@@ -231,6 +225,7 @@
 
                     <div class="job_lists m-0">
                         <div class="row">
+                            <!--Вывод списка вакансий -->
                             <?php foreach ($jobs as $job): ?>
                             <div class="col-lg-12 col-md-12">
                                 <div class="single_jobs white-bg d-flex justify-content-between">
@@ -270,7 +265,7 @@
         </div>
     </div>
     <!-- job_listing_area_end  -->
-
+    <?php require 'footer.php'?>
 
 
     <!-- link that opens popup -->

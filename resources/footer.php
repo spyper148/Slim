@@ -61,8 +61,8 @@
                             Category
                         </h3>
                         <ul>
-                            <?php foreach ($categories as $category):?>
-                                <li><a><?=$category['name']?></a></li> <!--/ куда-то ведёт ссылка  -->
+                            <?php foreach ($f_categories as $f_category):?>
+                                <li><a href="/jobs?cat==<?=$f_category['id']?>"><?=$f_category['name']?></a></li> <!--/ куда-то ведёт ссылка  -->
                             <?php endforeach;?>
                         </ul>
                     </div>
